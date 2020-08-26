@@ -71,8 +71,17 @@ public class FollowerFragment extends Fragment {
 
         String username = getArguments().getString("usernameFrag");
 //        tvFollower.setText(username);
+        showPB(true);
         getData(username);
 
+    }
+
+    private void showPB(boolean state) {
+        if (state) {
+            progressBar.setVisibility(View.VISIBLE);
+        }else {
+            progressBar.setVisibility(View.GONE);
+        }
     }
 
     private void getData(String query) {
@@ -113,6 +122,7 @@ public class FollowerFragment extends Fragment {
                 rvUserFollower.setLayoutManager(new LinearLayoutManager(getActivity()));
                 UserAdapter userAdapter = new UserAdapter(listUser,getActivity());
                 rvUserFollower.setAdapter(userAdapter);
+                showPB(false);
             }
 
             @Override
