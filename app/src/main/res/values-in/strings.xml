@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My2ndDicodingSubmission</string>
+
+    <string name="search">Cari</string>
+    <string name="search_hint">Cari</string>
+    <string name="username">username</string>
+    <string name="name">nama</string>
+    <string name="company_name">nama perusahaan</string>
+    <string name="email">email</string>
+
+    <string name="following">Diikuti</string>
+    <string name="follower">Mengikuti</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_main">Cari User Github</string>
+    <string name="user_detail">Detail User</string>
+
+    <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+
+</resources>
